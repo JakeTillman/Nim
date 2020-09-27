@@ -9,6 +9,9 @@ public class GameOfNim {
 		ArgsProcessor ap = new ArgsProcessor(args);
 		
 		int startSticks = ap.nextInt("How many sticks should we start with?");
+		while (startSticks <= 2) {
+			startSticks = ap.nextInt("Please start with 3 or more sticks");
+		}
 		int roundNum = 0;
 		double humanOrComp = 0.0;
 		int compTake = 0;
