@@ -29,7 +29,7 @@ public class GameOfNim {
 			
 			if (startSticks > 2) {
 			atStart = atStart - humanTake;
-			double compTurn = Math.random();
+			double compTurn = Math.random(); //Computer is Random
 			if (compTurn > 0.5) {
 				compTake = 2;
 			}
